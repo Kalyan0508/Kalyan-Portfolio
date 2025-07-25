@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G Kalyan Ram | Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://kit.fontawesome.com/8a73682344.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-flex">
+      <!-- <div class="logo">
+        <img src="" alt="Kalyan's Logo">
+      </div> -->
+      <ul id="sidemenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#positions">Positions</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+      <button id="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    </div>
+  </nav>
+  
+
+  <!-- Hero Section (professional layout) -->
+  <header id="header" class="hero-section">
+    <div class="hero-bg-svg">
+    <img src="assets/background.jpg" alt="" aria-hidden="true">
+  </div>
+    <div class="container hero-content">
+      <div class="hero-img">
+        <img src="assets/profile.jpg" alt="Kalyan's Photo">
+      </div>
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Kalyan</span></h1>
+        <p class="hero-tagline">Building intelligent solutions at the intersection of AI and Web</p>
+        <p>Creative Enthusiast & CSE Student at NIT Andhra Pradesh</p>
+        <div class="hero-badges">
+          <span>Machine Learning</span>
+          <span>Web Development</span>
+          <span>DSA</span>
+          <span>NIT Andhra Pradesh</span>
+        </div>
+        <a href="public/Kalyan-Resume.pdf" class="btn" download>Download CV</a>
+        <div class="hero-social">
+          <a href="https://github.com/Kalyan0508" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/" aria-label="LinkedIn"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="mailto:kalyanr0508@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <a href="#contact" class="btn btn2 hero-contact-btn">Let’s Connect</a>
+      </div>
+    </div>
+    <div class="hero-divider">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#fff" fill-opacity="1" d="M0,32L1440,80L1440,0L0,0Z"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container about-flex">
+      <div class="about-img">
+        <img src="assets/about.png" alt="Kalyan's Photo">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Computer Science undergraduate at NIT Andhra Pradesh (CGPA: 8.25). Hands-on experience in machine learning and
+          web development through internships at VEDAS,Plasmid and Codsoft. Project portfolio includes Spam News
+          Detection, Clustering, and full-stack web applications. Proficient in DSA, Python, C, Java, SQL, MongoDB,
+          Django, and React. Top 3% in JEE Mains (97.6 percentile), TS EAMCET state rank 1507.
+        </p>
+        <!-- Tabbed Info -->
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('grades')">Grades</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Django, React</li>
+            <li><span>Machine Learning</span><br>Python, TensorFlow, Clustering, Classification</li>
+            <li><span>Data Structures</span><br>DSA in C, Java, Python</li>
+            <li><span>Developer Tools</span><br>Git, Jupyter, SQL, MongoDB</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>May-Jul 2025</span><br>Machine Learning Intern at VEDAS LAB
+              <ul>
+                <li>Worked on the "Personalised QA System on T1 Diabetes Granada" project for diabetes detection using
+                  advanced ML and NLP techniques.</li>
+              </ul>
+            </li>
+            <li><span>Apr-Jul 2024</span><br>Machine Learning Intern at Plasmid</li>
+            <li><span>Oct-Nov 2023</span><br>Web Development Intern at Codsoft</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2022-Present</span><br>B.Tech (CSE), NIT Andhra Pradesh</li>
+            <li><span>2020</span><br>SSC, New Era High School</li>
+            <li><span>2022</span><br>Intermediate, New Vision Junior College</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="grades">
+          <ul>
+            <li><span>2020</span><br>SSC - 10 GPA</li>
+            <li><span>2022</span><br>IPE - 98.4%, JEE MAINS - 97.6 Percentile</li>
+            <li><span>2022-Present</span><br>CGPA - 8.25</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <!-- ...existing code... -->
+        <div class="project-card animate-fadein">
+          <h3>American Sign Language Detection (YOLOv5 + Streamlit)</h3>
+          <p>
+            <strong>Summary:</strong> Real-time detection of American Sign Language (ASL) static letters (A–Z except J
+            and Z) using a custom-trained YOLOv5m model.<br>
+            <strong>Highlights:</strong> Interactive Streamlit web app for uploading images and getting instant
+            predictions with bounding boxes and labels. Built to support communication for the hearing and
+            speech-impaired community.<br>
+            <a href="https://github.com/Kalyan0508/ASL-Letter-Detection-CNN" target="_blank">View on GitHub</a>
+            &nbsp;|&nbsp;
+            <a href="https://huggingface.co/spaces/Kalyan0508/ASL_Letter_Detection" target="_blank">Live Demo</a>
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>YOLOv5</span>
+            <span>Streamlit</span>
+            <span>PyTorch</span>
+            <span>Computer Vision</span>
+          </div>
+        </div>
+        <!-- ...existing code... -->
+        <div class="project-card animate-fadein">
+          <h3>Personalised QA System on T1 Diabetes Granada</h3>
+          <p>
+            <strong>Summary:</strong> Developed a question-answering system for diabetes detection using the T1 Diabetes
+            Granada dataset.<br>
+            <strong>Highlights:</strong> Integrated ML and NLP models to provide personalized responses for patient
+            queries and early detection support.<br>
+            <a href="https://github.com/Kalyan0508/Medical-QA-System_Diabetes" target="_blank">View on GitHub</a>
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>NLP</span>
+            <span>NetworkX</span>
+          </div>
+        </div>
+        <div class="project-card animate-fadein">
+          <h3>Heartbeat Sound Classification</h3>
+          <p>
+            <strong>Summary:</strong> Built deep learning models (LSTM-CNN and TCNN) to classify cardiac sounds from
+            audio recordings.<br>
+            <strong>Highlights:</strong> Achieved high accuracy in detecting normal and abnormal heartbeats, with a
+            user-friendly web interface for audio upload and instant results.<br>
+            <strong>Demo:</strong> <a href="https://huggingface.co/spaces/Kalyan0508/TCNN" target="_blank">Live Demo</a>
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>Keras</span>
+            <span>Librosa</span>
+          </div>
+        </div>
+        <div class="project-card animate-fadein">
+          <h3>Student Results Management System</h3>
+          <p>
+            <strong>Summary:</strong> Developed a web platform for students and faculty to view, analyze, and manage
+            academic results securely.<br>
+            <strong>Highlights:</strong> Features include user authentication, grade analytics, and profile management
+            for students and faculty.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Django</span>
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-card animate-fadein">
+          <h3>Online Movie Ticket Booking System</h3>
+          <p>
+            <strong>Summary:</strong> Designed an online system for browsing movies, showtimes, and reserving seats at
+            cinemas.<br>
+            <strong>Highlights:</strong> Includes seat selection, booking ticket count, and real-time availability for a
+            seamless user experience.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Django</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+        <div class="project-card animate-fadein">
+          <h3>Veggie-Basket – Fruit & Vegetable Market Web App</h3>
+          <p>
+            <strong>Summary:</strong> Full-stack web application for buying fruits and vegetables online.<br>
+            <strong>Highlights:</strong> Built with the MERN stack (MongoDB, Express, React, Node.js). Features user
+            authentication, persistent cart, order checkout, and a secure admin panel for managing products and
+            orders.<br>
+            <a href="https://github.com/Kalyan0508/Veggie-Basket" target="_blank">View on GitHub</a>
+          </p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>MERN Stack</span>
+            <span>JWT Auth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="cert-list">
+        <div class="cert-card animate-fadein">
+          <a href="https://learn.nvidia.com/certificates?id=YfIoooOFTDS4nHSBrzepeA" target="_blank">
+            <img src="assets/certificates/NVDIA-certificate.jpg" alt="NVIDIA Certificate">
+            <p>Fundamentals of Deep Learning - NVIDIA</p>
+          </a>
+        </div>
+
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/posts/kalyan-ram-gunji-2a02b8261_googleprojectmanagement-professionaldevelopment-activity-7164528371840868352-GRBK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEBLWpgBD2IIk-QEotMZluvnB45qWMUX3LY"
+            target="_blank">
+            <img src="assets/certificates/coursera.png" alt="Google Project Management">
+            <p>Project Management - Google/Coursera</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/Cloud-Cognitive.png" alt="Cloud Cognitive">
+            <p>Introduction to Cloud Computing- Cognitive</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/cloud.jpg" alt="Cloud Computing">
+            <p>Cloud Computing - NPTEL</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/Web_Development_Intern.png" alt="Web Development">
+            <p>Web Development- Teachnook</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/codsoft.png" alt="Web Development">
+            <p>Web Development- Codsoft</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.udemy.com/certificate/UC-25e23112-5685-4e23-ae25-1a3d3153615e/" target="_blank">
+            <img src="assets/certificates/udemy.png" alt="Udemy ML">
+            <p>Machine Learning - Udemy</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/accenture.png" alt="Accenture Data Analytics">
+            <p>Data Analytics - Accenture</p>
+          </a>
+        </div>
+
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/Deloitte.png" alt="Deloitte Data Analystics">
+            <p>Data Analytics Job Simulation - Deloitte</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/AWS.png" alt="Cloud Practioner">
+            <p>Cloud Practioner Essentials - AWS</p>
+          </a>
+        </div>
+
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/Plasmid-Intern.png" alt="Artificial Intelligence">
+            <p>Machine Learning- Plasmid</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/Core-Java.png" alt="Core Java">
+            <p>Core Java- NareshIT</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/Data Visualization.png" alt="Data Visualization">
+            <p>Data Visualization Tools- Mallikarjuna_infosys</p>
+          </a>
+        </div>
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/SIH.png" alt="Smart India Hackathon">
+            <p>Smart India Hackathon- SIH</p>
+          </a>
+        </div>
+
+        <div class="cert-card animate-fadein">
+          <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
+            <img src="assets/certificates/Web Development-Course.png" alt="Web Development">
+            <p>Web Development Course- Teachnook</p>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Positions of Responsibility -->
+  <section id="positions" class="section">
+    <div class="container">
+      <h2>Positions of Responsibility</h2>
+      <div class="positions-list">
+        <div class="position-card animate-slidein">
+          <h3>Joint Secretary, CSEA</h3>
+          <p>Computer Science and Engineering Association, NIT Andhra Pradesh<br><span>Sept. 2024--Present</span></p>
+        </div>
+        <div class="position-card animate-slidein">
+          <h3>Executive Member, Graphic Cafe</h3>
+          <p>Media Cell of NIT Andhra Pradesh<br><span>Sept. 2024--Present</span></p>
+        </div>
+        <div class="position-card animate-slidein">
+          <h3>Team Lead, Heartbeat Sound Classification</h3>
+          <p>NIT Andhra Pradesh<br><span>Jan. 2025--May. 2025</span></p>
+        </div>
+        <div class="position-card animate-slidein">
+          <h3>Team Lead, Student Results Management Portal</h3>
+          <p>NIT Andhra Pradesh<br><span>Jan. 2024--May. 2024</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ...existing code... -->
+  <!-- Contact -->
+  <section id="contact" class="section" aria-labelledby="contact-heading">
+    <div class="container contact-container">
+      <h2 id="contact-heading">Contact Me</h2>
+      <div class="contact-flex">
+        <!-- ...existing code... -->
+        <div class="contact-left">
+          <p>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:kalyanr0508@gmail.com" aria-label="Email Kalyan">kalyanr0508@gmail.com</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <a href="tel:+919550272877" aria-label="Call Kalyan">+91-95502-72877</a>
+          </p>
+          <div class="social-icons contact-social" aria-label="Social Links">
+            <a href="https://www.instagram.com/_r_aa_m_0258/" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://t.me/kalyan0508" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="mailto:kalyanr0508@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/Kalyan0508/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="public/Kalyan-Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <!-- ...existing code... -->
+        <div class="contact-right">
+          <form action="https://formspree.io/f/xvgqapqr" method="POST" aria-label="Contact Form">
+            <label for="contact-name" class="visually-hidden">Your Name</label>
+            <input id="contact-name" type="text" name="name" placeholder="Your Name" required>
+            <label for="contact-email" class="visually-hidden">Your Email</label>
+            <input id="contact-email" type="email" name="email" placeholder="Your Email" required>
+            <label for="contact-message" class="visually-hidden">Your Message</label>
+            <textarea id="contact-message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn3">Submit</button>
+          </form>
+        </div>
+
+      </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Kalyan. <i class="fa-solid fa-heart"></i> Student at NIT</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
