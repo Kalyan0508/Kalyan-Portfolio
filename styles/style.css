@@ -656,3 +656,26 @@ body.dark .footer {
     min-width:  0;
   }
 }
+/* For all main text blocks */
+.about-content p,
+.project-card p,
+.cert-card p,
+.position-card p,
+.contact-left p,
+.contact-right form input,
+.contact-right form textarea {
+  text-align: justify;
+}
+
+/* For headings and section titles, keep them centered or left as needed */
+h1, h2, h3, .sub-title {
+  text-align: left;
+}
+
+/* For better readability, add some line height */
+.about-content p,
+.project-card p,
+.cert-card p,
+.position-card p {
+  line-height: 1.7;
+}

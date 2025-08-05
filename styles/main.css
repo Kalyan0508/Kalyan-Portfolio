@@ -45,6 +45,11 @@ nav .fa-bars, nav .fa-times { display: none; font-size: 1.8rem; cursor: pointer;
 .project-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
 .project-card h3 { color: #007cf0; margin-bottom: 8px; }
 .project-card a { color: #00dfd8; text-decoration: underline; }
+.project-card p{
+  color: #487984; /* Dark text for readability */
+}
+
+
 
 /* Certifications */
 .cert-list { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 40px; }
