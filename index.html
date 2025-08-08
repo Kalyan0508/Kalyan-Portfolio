@@ -1,92 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G Kalyan Ram | Portfolio</title>
+  <title>G Kalyan Ram | CSE Professional</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/main.css">
   <script src="https://kit.fontawesome.com/8a73682344.js" crossorigin="anonymous"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
-  <!-- Navbar -->
+  <!-- ================== NAVBAR =================== -->
   <nav class="navbar">
     <div class="container nav-flex">
-      <!-- <div class="logo">
-        <img src="" alt="Kalyan's Logo">
-      </div> -->
-      <ul id="sidemenu">
+      <a href="#" class="logo">KR</a>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#positions">Positions</a></li>
         <li><a href="#contact">Contact</a></li>
-        <i class="fas fa-times" onclick="closemenu()"></i>
       </ul>
-      <i class="fas fa-bars" onclick="openmenu()"></i>
-      <button id="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+      <!-- Hamburger for mobile -->
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Dark mode toggle (if you want) -->
+      <button id="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
     </div>
   </nav>
-  
-
-  <!-- Hero Section (professional layout) -->
-  <header id="header" class="hero-section">
-    <div class="hero-bg-svg">
-    <img src="assets/background.jpg" alt="" aria-hidden="true">
+  <!-- Sidebar drawer for mobile navigation -->
+  <div class="sidemenu" id="mobile-sidemenu">
+    <button class="close-btn" id="sidemenu-close">&times;</button>
+    <ul>
+      <li><a href="#about" onclick="closeSidemenu()">About</a></li>
+      <li><a href="#projects" onclick="closeSidemenu()">Projects</a></li>
+      <li><a href="#certifications" onclick="closeSidemenu()">Certifications</a></li>
+      <li><a href="#positions" onclick="closeSidemenu()">Positions</a></li>
+      <li><a href="#contact" onclick="closeSidemenu()">Contact</a></li>
+    </ul>
   </div>
-    <div class="container hero-content">
+
+  <!-- ================== HERO SECTION =================== -->
+  <header id="header" class="hero-section">
+    <div class="container hero-flex">
       <div class="hero-img">
         <img src="assets/profile.jpg" alt="Kalyan's Photo">
       </div>
       <div class="hero-text">
         <h1>Hi, I'm <span>Kalyan</span></h1>
-        <p class="hero-tagline">Building intelligent solutions at the intersection of AI and Web</p>
-        <p>Creative Enthusiast & CSE Student at NIT Andhra Pradesh</p>
+        <p class="hero-tagline">Building intelligent solutions at the intersection of AI and Web Development</p>
         <div class="hero-badges">
           <span>Machine Learning</span>
           <span>Web Development</span>
           <span>DSA</span>
           <span>NIT Andhra Pradesh</span>
         </div>
-        <a href="public/Kalyan-Resume.pdf" class="btn" download>Download CV</a>
         <div class="hero-social">
           <a href="https://github.com/Kalyan0508" aria-label="GitHub"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/" aria-label="LinkedIn"><i
               class="fab fa-linkedin"></i></a>
           <a href="mailto:kalyanr0508@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
-        <a href="#contact" class="btn btn2 hero-contact-btn">Let’s Connect</a>
+        <div class="hero-buttons">
+          <a href="public/Kalyan-Resume.pdf" class="btn" download>Download CV</a>
+          <a href="#contact" class="btn btn2">Let's Connect</a>
+        </div>
       </div>
-    </div>
-    <div class="hero-divider">
-      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#fff" fill-opacity="1" d="M0,32L1440,80L1440,0L0,0Z"></path>
-      </svg>
     </div>
   </header>
 
-  <!-- About Section -->
+  <!-- ====================== ABOUT SECTION ======================= -->
   <section id="about" class="section">
-    <div class="container about-flex">
-      <div class="about-img">
-        <img src="assets/about.png" alt="Kalyan's Photo">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-main">
+        <div class="about-img">
+          <img src="assets/about.png" alt="Kalyan's Photo">
+        </div>
+        <div class="about-intro">
+          <h3>G Kalyan Ram</h3>
+          <p class="about-title">CSE Professional & AI Enthusiast</p>
+          <p class="about-description">
+            Computer Science undergraduate at NIT Andhra Pradesh (CGPA: 8.25). Hands-on experience in machine learning
+            and web development through internships at VEDAS, Plasmid, and Codsoft. Project portfolio includes Spam News
+            Detection, Clustering, and full-stack web applications. Proficient in DSA, Python, C, Java, SQL, MongoDB,
+            Django, and React. Top 3% in JEE Mains (97.6 percentile), TS EAMCET state rank 1507.
+          </p>
+        </div>
       </div>
-      <div class="about-content">
-        <h2>About Me</h2>
-        <p>
-          Computer Science undergraduate at NIT Andhra Pradesh (CGPA: 8.25). Hands-on experience in machine learning and
-          web development through internships at VEDAS,Plasmid and Codsoft. Project portfolio includes Spam News
-          Detection, Clustering, and full-stack web applications. Proficient in DSA, Python, C, Java, SQL, MongoDB,
-          Django, and React. Top 3% in JEE Mains (97.6 percentile), TS EAMCET state rank 1507.
-        </p>
-        <!-- Tabbed Info -->
+      <div class="about-tabs">
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
           <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -94,38 +104,108 @@
           <p class="tab-links" onclick="opentab('grades')">Grades</p>
         </div>
         <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Django, React</li>
-            <li><span>Machine Learning</span><br>Python, TensorFlow, Clustering, Classification</li>
-            <li><span>Data Structures</span><br>DSA in C, Java, Python</li>
-            <li><span>Developer Tools</span><br>Git, Jupyter, SQL, MongoDB</li>
-          </ul>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Web Development</h4>
+              <div class="skill-items">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                <span>Django</span><span>React</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Machine Learning</h4>
+              <div class="skill-items">
+                <span>Python</span><span>TensorFlow</span>
+                <span>Clustering</span><span>Classification</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Data Structures</h4>
+              <div class="skill-items">
+                <span>DSA in C</span><span>Java</span><span>Python</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Developer Tools</h4>
+              <div class="skill-items">
+                <span>Git</span><span>Jupyter</span>
+                <span>SQL</span><span>MongoDB</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>May-Jul 2025</span><br>Machine Learning Intern at VEDAS LAB
-              <ul>
-                <li>Worked on the "Personalised QA System on T1 Diabetes Granada" project for diabetes detection using
-                  advanced ML and NLP techniques.</li>
-              </ul>
-            </li>
-            <li><span>Apr-Jul 2024</span><br>Machine Learning Intern at Plasmid</li>
-            <li><span>Oct-Nov 2023</span><br>Web Development Intern at Codsoft</li>
-          </ul>
+          <div class="experience-timeline">
+            <div class="timeline-item">
+              <!-- <div class="timeline-date">May-Jul 2025</div> -->
+              <div class="timeline-content">
+                <h4>Machine Learning Intern at VEDAS LAB</h4>
+                <p>Worked on the "Personalised QA System on T1 Diabetes Granada" project for diabetes detection using
+                  advanced ML and NLP techniques.</p>
+                <p id="timeline-date">May-July 2025</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <!-- <div class="timeline-date">Apr-Jul 2024</div> -->
+              <div class="timeline-content">
+                <h4>Machine Learning Intern at Plasmid</h4>
+                <p>Developed machine learning models and algorithms for data analysis and pattern recognition.</p>
+                <p id="timeline-date">Apr-July 2024</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <!-- <div class="timeline-date">Oct-Nov 2023</div> -->
+              <div class="timeline-content">
+                <h4>Web Development Intern at Codsoft</h4>
+                <p>Built responsive web applications using modern technologies and best practices.</p>
+                <p id="timeline-date">Oct-Nov 2023</p>
+
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-contents" id="education">
-          <ul>
-            <li><span>2022-Present</span><br>B.Tech (CSE), NIT Andhra Pradesh</li>
-            <li><span>2020</span><br>SSC, New Era High School</li>
-            <li><span>2022</span><br>Intermediate, New Vision Junior College</li>
-          </ul>
+          <div class="education-cards">
+            <div class="edu-card">
+              <h4>B.Tech (CSE)</h4>
+              <p>NIT Andhra Pradesh</p>
+              <span>2022-Present</span>
+            </div>
+            <div class="edu-card">
+              <h4>Intermediate</h4>
+              <p>New Vision Junior College</p>
+              <span>2022</span>
+            </div>
+            <div class="edu-card">
+              <h4>SSC</h4>
+              <p>New Era High School</p>
+              <span>2020</span>
+            </div>
+          </div>
         </div>
         <div class="tab-contents" id="grades">
-          <ul>
-            <li><span>2020</span><br>SSC - 10 GPA</li>
-            <li><span>2022</span><br>IPE - 98.4%, JEE MAINS - 97.6 Percentile</li>
-            <li><span>2022-Present</span><br>CGPA - 8.25</li>
-          </ul>
+          <div class="grades-grid">
+            <div class="grade-card">
+              <h4>CGPA</h4>
+              <div class="grade-value">8.25</div>
+              <p>NIT Andhra Pradesh</p>
+            </div>
+            <div class="grade-card">
+              <h4>JEE MAINS</h4>
+              <div class="grade-value">97.6%</div>
+              <p>Percentile</p>
+            </div>
+            <div class="grade-card">
+              <h4>IPE</h4>
+              <div class="grade-value">98.4%</div>
+              <p>Intermediate</p>
+            </div>
+            <div class="grade-card">
+              <h4>SSC</h4>
+              <div class="grade-value">10 GPA</div>
+              <p>School</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -135,11 +215,10 @@
   <!-- Projects -->
   <section id="projects" class="section">
     <div class="container">
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="projects-list">
-        <!-- ...existing code... -->
         <div class="project-card animate-fadein">
-          <h3>American Sign Language Detection (YOLOv5 + Streamlit)</h3>
+          <h3 >American Sign Language Detection (YOLOv5 + Streamlit)</h3>
           <p>
             <strong>Summary:</strong> Real-time detection of American Sign Language (ASL) static letters (A–Z except J
             and Z) using a custom-trained YOLOv5m model.<br>
@@ -158,7 +237,7 @@
             <span>Computer Vision</span>
           </div>
         </div>
-        <!-- ...existing code... -->
+
         <div class="project-card animate-fadein">
           <h3>Personalised QA System on T1 Diabetes Granada</h3>
           <p>
@@ -175,6 +254,7 @@
             <span>NetworkX</span>
           </div>
         </div>
+
         <div class="project-card animate-fadein">
           <h3>Heartbeat Sound Classification</h3>
           <p>
@@ -191,6 +271,7 @@
             <span>Librosa</span>
           </div>
         </div>
+
         <div class="project-card animate-fadein">
           <h3>Student Results Management System</h3>
           <p>
@@ -205,6 +286,7 @@
             <span>PostgreSQL</span>
           </div>
         </div>
+
         <div class="project-card animate-fadein">
           <h3>Online Movie Ticket Booking System</h3>
           <p>
@@ -219,6 +301,7 @@
             <span>SQLite</span>
           </div>
         </div>
+
         <div class="project-card animate-fadein">
           <h3>Veggie-Basket – Fruit & Vegetable Market Web App</h3>
           <p>
@@ -244,7 +327,7 @@
   <!-- Certifications -->
   <section id="certifications" class="section">
     <div class="container">
-      <h2>Certifications</h2>
+      <h2>Courses &Certifications</h2>
       <div class="cert-list">
         <div class="cert-card animate-fadein">
           <a href="https://learn.nvidia.com/certificates?id=YfIoooOFTDS4nHSBrzepeA" target="_blank">
@@ -260,36 +343,42 @@
             <p>Project Management - Google/Coursera</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
             <img src="assets/certificates/Cloud-Cognitive.png" alt="Cloud Cognitive">
             <p>Introduction to Cloud Computing- Cognitive</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
             <img src="assets/certificates/cloud.jpg" alt="Cloud Computing">
             <p>Cloud Computing - NPTEL</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
             <img src="assets/certificates/Web_Development_Intern.png" alt="Web Development">
             <p>Web Development- Teachnook</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
             <img src="assets/certificates/codsoft.png" alt="Web Development">
             <p>Web Development- Codsoft</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.udemy.com/certificate/UC-25e23112-5685-4e23-ae25-1a3d3153615e/" target="_blank">
             <img src="assets/certificates/udemy.png" alt="Udemy ML">
             <p>Machine Learning - Udemy</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
             <img src="assets/certificates/accenture.png" alt="Accenture Data Analytics">
@@ -303,6 +392,7 @@
             <p>Data Analytics Job Simulation - Deloitte</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
             <img src="assets/certificates/AWS.png" alt="Cloud Practioner">
@@ -316,18 +406,21 @@
             <p>Machine Learning- Plasmid</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
             <img src="assets/certificates/Core-Java.png" alt="Core Java">
             <p>Core Java- NareshIT</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
             <img src="assets/certificates/Data Visualization.png" alt="Data Visualization">
             <p>Data Visualization Tools- Mallikarjuna_infosys</p>
           </a>
         </div>
+
         <div class="cert-card animate-fadein">
           <a href="https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/details/certifications/" target="_blank">
             <img src="assets/certificates/SIH.png" alt="Smart India Hackathon">
@@ -341,15 +434,14 @@
             <p>Web Development Course- Teachnook</p>
           </a>
         </div>
-
-
       </div>
     </div>
   </section>
+
   <!-- Positions of Responsibility -->
   <section id="positions" class="section">
     <div class="container">
-      <h2>Positions of Responsibility</h2>
+      <h2>Leadership & Positions</h2>
       <div class="positions-list">
         <div class="position-card animate-slidein">
           <h3>Joint Secretary, CSEA</h3>
@@ -371,13 +463,11 @@
     </div>
   </section>
 
-  <!-- ...existing code... -->
   <!-- Contact -->
   <section id="contact" class="section" aria-labelledby="contact-heading">
     <div class="container contact-container">
-      <h2 id="contact-heading">Contact Me</h2>
+      <h2 id="contact-heading">Get In Touch</h2>
       <div class="contact-flex">
-        <!-- ...existing code... -->
         <div class="contact-left">
           <p>
             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
@@ -398,7 +488,7 @@
           </div>
           <a href="public/Kalyan-Resume.pdf" download class="btn btn2">Download CV</a>
         </div>
-        <!-- ...existing code... -->
+
         <div class="contact-right">
           <form action="https://formspree.io/f/xvgqapqr" method="POST" aria-label="Contact Form">
             <label for="contact-name" class="visually-hidden">Your Name</label>
@@ -407,16 +497,17 @@
             <input id="contact-email" type="email" name="email" placeholder="Your Email" required>
             <label for="contact-message" class="visually-hidden">Your Message</label>
             <textarea id="contact-message" name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn3">Submit</button>
+            <button type="submit" class="btn btn3">Send Message</button>
           </form>
         </div>
-
       </div>
+    </div>
   </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; Kalyan. <i class="fa-solid fa-heart"></i> Student at NIT</p>
+      <p>&copy; 2024 Kalyan Ram. <i class="fa-solid fa-heart"></i> CSE Student at NIT Andhra Pradesh</p>
     </div>
   </footer>
 

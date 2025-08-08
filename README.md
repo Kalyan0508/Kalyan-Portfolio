@@ -1,112 +1,108 @@
-# G Kalyan Ram | Portfolio
+# G Kalyan Ram - Modern Tech Portfolio
 
-Welcome to my personal portfolio website!  
-This site showcases my projects, certifications, skills, and experiences as a Computer Science undergraduate at NIT Andhra Pradesh.
+A cutting-edge, responsive portfolio website showcasing the skills and projects of G Kalyan Ram, a Computer Science Engineering student at NIT Andhra Pradesh.
 
----
+## 🚀 Features
 
-## 🚀 Live Demo
+### Modern Design
+- **Veteran CSE Professional Aesthetic**: Clean, tech-focused design with professional color scheme
+- **Responsive Layout**: Optimized for all devices and screen sizes
+- **Dark/Light Mode**: Toggle between themes with persistent preference
+- **Smooth Animations**: Advanced CSS animations and transitions throughout
 
-[View Portfolio Live](https://github.com/Kalyan0508/Kalyan-Portfolio)  
+### Interactive Elements
+- **Particle Background**: Dynamic particle system in hero section
+- **Scroll Animations**: Elements animate as they come into view
+- **Typing Effect**: Hero title animates with typing effect
+- **Hover Effects**: Interactive cards with smooth hover animations
+- **Parallax Scrolling**: Subtle parallax effect on hero section
 
----
+### Professional Sections
+- **Hero Section**: Full-screen introduction with animated elements
+- **About**: Tabbed information display with skills, experience, education, and grades
+- **Projects**: Grid layout showcasing technical projects with tags
+- **Certifications**: Visual grid of professional certifications
+- **Leadership**: Positions of responsibility and leadership roles
+- **Contact**: Professional contact form with social links
 
-## 📌 About
+## 🛠️ Technologies Used
 
-- **Name:** G Kalyan Ram
-- **Education:** B.Tech (CSE), NIT Andhra Pradesh
-- **Interests:** Machine Learning, Web Development, Data Structures & Algorithms
+- **HTML5**: Semantic markup structure
+- **CSS3**: Modern styling with CSS Grid, Flexbox, and custom properties
+- **JavaScript**: ES6+ with modern features and class-based architecture
+- **Font Awesome**: Icons for social links and UI elements
+- **Google Fonts**: Inter and JetBrains Mono for typography
 
----
+## 🎨 Design Highlights
 
-## 🛠️ Tech Stack
+### Color Scheme
+- **Primary**: #00d4ff (Cyan blue)
+- **Secondary**: #ff6b35 (Orange)
+- **Gradients**: Multiple gradient combinations for visual appeal
+- **Dark Mode**: Complete dark theme with proper contrast
 
-- **Frontend:** HTML, CSS, JavaScript, React
-- **Backend:** Node.js, Express, Django
-- **Database:** MongoDB, PostgreSQL, SQLite
-- **Other:** Python, TensorFlow, Keras, Streamlit, Git
+### Typography
+- **Inter**: Modern sans-serif for body text
+- **JetBrains Mono**: Monospace font for code elements and logo
 
----
+### Animations
+- **Fade In Up**: Staggered animations for hero elements
+- **Slide In**: Smooth slide animations for cards
+- **Hover Effects**: Transform and shadow effects on interaction
+- **Loading Screen**: Professional loading animation
 
-## 🏆 Featured Projects
+## 📱 Responsive Design
 
-- **American Sign Language Detection (YOLOv5 + Streamlit):**  
-  Real-time detection of ASL static letters using a custom-trained YOLOv5m model.  
-  [GitHub](https://github.com/Kalyan0508/ASL-Letter-Detection-CNN) | [Live Demo](https://huggingface.co/spaces/Kalyan0508/ASL_Letter_Detection)
+- **Desktop**: Full-featured layout with grid systems
+- **Tablet**: Optimized spacing and layout adjustments
+- **Mobile**: Stacked layout with touch-friendly interactions
 
-- **Personalised QA System on T1 Diabetes Granada:**  
-  ML/NLP-powered system for diabetes detection and patient query answering.  
-  [GitHub](https://github.com/Kalyan0508/Medical-QA-System_Diabetes)
+## 🚀 Performance Features
 
-- **Heartbeat Sound Classification:**  
-  Deep learning models for classifying cardiac sounds from audio.  
-  [Live Demo](https://huggingface.co/spaces/Kalyan0508/TCNN)
+- **Optimized Images**: Proper image sizing and formats
+- **Smooth Scrolling**: CSS scroll-behavior for navigation
+- **Lazy Loading**: Efficient loading of animations and effects
+- **Minimal Dependencies**: Lightweight and fast loading
 
-- **Student Results Management System:**  
-  Web platform for secure academic results management (Python, Django, PostgreSQL).
+## 📋 Sections Overview
 
-- **Veggie-Basket – Fruit & Vegetable Market Web App:**  
-  Full-stack MERN application for online fruit and vegetable shopping.  
-  [GitHub](https://github.com/Kalyan0508/Veggie-Basket)
+1. **Hero Section**: Introduction with animated text and social links
+2. **About**: Personal information with tabbed interface
+3. **Projects**: Technical projects with descriptions and links
+4. **Certifications**: Professional achievements and certifications
+5. **Leadership**: Positions of responsibility and team roles
+6. **Contact**: Contact form and social media links
 
-- **Online Movie Ticket Booking System:**  
-  System for browsing movies, showtimes, and booking seats (Python, Django, SQLite).
+## 🎯 Key Features
 
----
+- **Professional Appearance**: Suitable for job applications and networking
+- **Modern UX**: Intuitive navigation and user experience
+- **Accessibility**: Proper ARIA labels and semantic HTML
+- **SEO Optimized**: Meta tags and structured content
+- **Cross-browser Compatible**: Works on all modern browsers
 
-## 📜 Certifications
+## 📞 Contact Information
 
-- Fundamentals of Deep Learning - NVIDIA
-- Project Management - Google/Coursera
-- Cloud Computing - Cognitive & NPTEL
-- Data Analytics - Accenture, Deloitte
-- Web Development - Teachnook, Codsoft
-- Machine Learning - Udemy, Plasmid
-- Core Java - NareshIT
-- Data Visualization Tools - Mallikarjuna Infosys
-- Smart India Hackathon - SIH
+- **Email**: kalyanr0508@gmail.com
+- **Phone**: +91-95502-72877
+- **LinkedIn**: [Kalyan Ram Gunji](https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/)
+- **GitHub**: [Kalyan0508](https://github.com/Kalyan0508)
 
----
+## 🎓 Education
 
-## 🏅 Positions of Responsibility
+- **Institution**: NIT Andhra Pradesh
+- **Degree**: B.Tech in Computer Science Engineering
+- **CGPA**: 8.25
+- **Expected Graduation**: 2026
 
-- Joint Secretary, CSEA (NIT Andhra Pradesh)
-- Executive Member, Graphic Cafe (Media Cell)
-- Team Lead, Heartbeat Sound Classification
-- Team Lead, Student Results Management Portal
+## 💼 Technical Skills
 
----
-
-## 📬 Contact
-
-- **Email:** [kalyanr0508@gmail.com](mailto:kalyanr0508@gmail.com)
-- **LinkedIn:** [Kalyan Ram Gunji](https://www.linkedin.com/in/kalyan-ram-gunji-2a02b8261/)
-- **GitHub:** [Kalyan0508](https://github.com/Kalyan0508)
-
----
-
-## 🌐 How to Use / Run Locally
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-   ```
-2. Open `index.html` in your browser.
-
----
-
-## 📦 Deployment
-
-This portfolio is easily deployable on [GitHub Pages](https://pages.github.com/), [Vercel](https://vercel.com/), or [Netlify](https://www.netlify.com/).
-
----
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
+- **Programming Languages**: Python, C, Java, JavaScript
+- **Web Technologies**: HTML, CSS, React, Django
+- **Machine Learning**: TensorFlow, Scikit-learn, NLP
+- **Databases**: SQL, MongoDB, PostgreSQL
+- **Tools**: Git, Jupyter, Docker
 
 ---
 
-> Built with ❤️ by **Kalyan Ram**  
-> Making technology accessible
+*Built with modern web technologies and designed for the digital age.*
